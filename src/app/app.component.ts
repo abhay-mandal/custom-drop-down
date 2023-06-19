@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'custom-drop-down';
+
+  items = [
+    { name: "Ferrari", id: "ferrari" },
+    { name: "BMW", id: "bmw" },
+    { name: "Mercedes", id: "mercedes" }
+  ];
+  bindLabel = "name";
+  placeholder = "Choose an option";
+
+  selectedItem(item) {
+    console.log("item", item);
+  }
 }
